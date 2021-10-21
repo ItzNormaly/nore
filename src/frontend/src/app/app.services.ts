@@ -5,9 +5,8 @@ import { HttpClient } from '@angular/common/http';
 export class AppService {
     constructor(private http: HttpClient) { }
 
-    numberBet(): Promise<any> {
-        return this.http.post<any>('http://localhost:3000/bet', {}).toPromise();
-        
+    numberBet() {
+        return this.http.post<any>('http://localhost:3000/bet', {});
     }
 
 

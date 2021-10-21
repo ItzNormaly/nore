@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 app.post('/bet', (req, res) => {
   res.json({
-     number: parseInt(Math.random() * (9999 - 1000) + 1000)
+     bet: parseInt(Math.random() * (99 - 10) + 10)
   
    });
 });
